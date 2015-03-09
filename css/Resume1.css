@@ -1,0 +1,139 @@
+/* 
+	Selector Rules 
+*/
+
+
+
+
+html {
+	padding: 0px;
+	background: #eee9df url(../images/paper1.jpg) center top repeat;
+}
+
+body {
+	margin-right: 100px auto;
+  margin-left: 100px auto;
+	font: 12pt/1.5em "Verdana, Helvetica","Helvetica neue", "Arial", "sans-serif"; 
+}
+
+/*HTML 5 specific*/
+header,section,article,aside,footer{
+	display: block;
+}
+
+h1 {
+    font-family: 'Dancing Script'; /* , cursive; */
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 22px;
+    }
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+/*    text-transform: uppercase; */
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+/*    margin: 0 0 23px 0; */
+    }
+p {
+    margin: 0 0 23px 0;
+    }
+
+
+/* 
+	Classes 
+*/
+
+.inner {
+    display: inline-block;
+    position: relative;
+}
+
+.overflow {
+    float: right;
+}
+
+.block {
+	margin-right: 100px auto;
+  margin-left: 100px auto;
+    display: block;
+/*    width: 100px; */
+}
+
+.element1 {
+    float: left;
+    width: 33%; 
+}
+
+.element2 {
+    text-align:  center; 
+    width: 33%; 
+}
+
+.element3 {
+    float: right;
+    width: 33%; 
+}
+
+.page { }
+
+.summary { }
+
+.sidebar {  }
+
+.footer { }
+
+.legal { }
+
+
+
+/* 
+	Identifiers
+*/
+
+#container	{
+      /* Set these dimensions so the card can be properly displayed in Safari on iPhone */
+    width: 700px; 
+    height: 500px;  
+/*		background-color: rgba(56,108,179, 0.5); */
+/*	  background: #eee9df url(../images/paper1.jpg) center top repeat; */
+    text-align: left;
+        /* Disable tap highlighting */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-perspective: 1000;
+/*    -moz-perspective: 1000;  */
+    -o-perspective: 1000;
+/*    perspective: 1000;   */
+    }   
+
+
+#container10	{
+/* font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    line-height: 46px;
+    font-size: 24px; */
+/*    margin: 0 0 23px 0; */
+    /*	  font: 16pt/1.5em "Verdana", "Helvetica","Helvetica neue", "Arial", "sans-serif"; */
+      /* Set these dimensions so the card can be properly displayed in Safari on iPhone */
+/*    width: 1024px; 
+    height: 350px;  */
+/*		background-color: rgba(56,108,179, 0.5); */
+/*	  background: #eee9df url(../images/paper1.jpg) center top repeat; */
+    text-align: center;
+        /* Disable tap highlighting */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-perspective: 1000;
+/*    -moz-perspective: 1000; */
+    -o-perspective: 1000;
+/*    perspective: 1000; */
+    }
+
+
+
+
+
+
+
+

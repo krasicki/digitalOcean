@@ -1,0 +1,329 @@
+/* 
+	Selector Rules 
+*/
+
+
+
+
+html {
+	padding: 0px;
+	background: #eee9df url("../images/GreenPaper1.jpg") center top repeat;
+ 	display: block;
+	font-size: 20px;
+	font-size:2.7vw;
+	font-family:"Verdana", "Helvetica","Helvetica neue", "Arial", "sans-serif";
+	text-align: left;
+}
+
+body {
+ 	margin-right: 40px;
+	margin-right: 7.5vw;
+	margin-left: 40px;
+    margin-left: 7.5vw;
+}
+
+/*HTML 5 specific*/
+header,section,article,aside,footer{
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    line-height: 22px;
+    line-height: 4.5vw;
+    font-size: 20px; 
+	font-size:3.7vw;
+	padding: 12px;
+	padding: 2.25vw;
+    font-weight: bold;
+    }
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+/*    text-transform: uppercase; */
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+/*    margin: 0 0 23px 0; */
+    }
+	
+p {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    }
+
+br
+{   content: "A" !important;
+    display: block !important;
+    margin-bottom: 1.5em !important;
+}
+
+header {
+	background: linear-gradient(to left,rgba(54,194,182,0.96) 0,rgba(62,188,207,0.96) 100%);
+	border-bottom: 0px solid rgba(0,0,0,.1);
+	box-shadow: 0 0px 0px 0 rgba(0,0,0,.1);
+	display: block;
+	height: 30px;
+	height: 4.0vw;
+	line-height: 59px;
+	line-height:  4.0vw;
+	overflow: hidden;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 1000;
+}
+
+
+/* START NAV MENU */
+nav {
+   background:#2C5463 url("../images/yelloww.jpg") center top repeat;
+  height:40px;
+  height: 4.0vw;
+ font-family: Verdana;
+  line-height: 18px;
+  line-height:2.7vw;
+  margin-top: 1.25em;
+  font-size: 2.9vw;
+}
+
+nav ul {
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  font-size:2.0vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+ 
+}
+ 
+nav li ul { 
+  display: none; 
+    font-family: Verdana;
+  line-height: 18px;
+  line-height:2.7vw;
+  margin-top: 1.25em;
+  font-size: 2.4vw;
+}
+ 
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  /*padding: 7px 15px 3px 15px; */
+  background: #2C5463;
+  color: #ffffff;  
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  height:4.0vw;
+  width:120px;
+  width:14vw;
+  text-align:center;
+  
+}
+ 
+nav ul li a:hover { 
+  background: #617F8A; 
+}
+ 
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:59px;
+  height:4.0vw;
+}
+ 
+nav li:hover li {
+  float: none;
+  font-size: 11px;
+  font-size: 1.65vw;
+}
+ 
+nav li:hover a { 
+  background: #3A464F; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+  height:4.0vw;
+}
+ 
+nav li:hover li a:hover { 
+  background: #95A9B1; 
+}
+ 
+nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* END NAV MENU */
+
+/* 
+	Classes 
+*/
+
+.inner {
+    display: inline-block;
+    position: relative;
+}
+
+.overflow {
+    float: right;
+}
+/*
+.block {
+	margin-right: 50px;
+  margin-left: 100px;
+  display: block; 
+
+.element1 {
+  width: 31%;
+	float: left;
+	padding: 5px 15px;
+}
+
+.element2 {
+  width: 35%;
+	float: right;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+.element3 {
+  width: auto;
+	padding: 5px 15px;
+	float: none;
+}
+*/
+
+.block { width:1020px; }
+.element1, .element2, .element3 { width:300px; margin:0 10px; padding:10px; background-color: #efefef }
+.element1 { float:left; }
+.element2 { float:left; }
+.element3 { float:right; }
+.clear { clear: left; }
+
+.page { }
+
+.summary { }
+
+.sidebar {  }
+
+.footer { }
+
+.legal { }
+
+
+
+/* 
+	Identifiers
+*/
+
+#container	{
+      /* Set these dimensions so the card can be properly displayed in Safari on iPhone */
+/*    width: 700px; 
+    height: 500px;  */
+/*		background-color: rgba(56,108,179, 0.5); */
+/*	  background: #eee9df url(../images/paper1.jpg) center top repeat; */
+    text-align: left;
+        /* Disable tap highlighting */
+ /*   -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-perspective: 1000; */
+/*    -moz-perspective: 1000;  */
+ /*   -o-perspective: 1000; */
+/*    perspective: 1000;   */
+    }   
+
+
+#container10	{
+    font-family: 'Dancing Script';
+    line-height: 25px;
+	line-height:6.5vh;
+    font-size: 22px;
+	font-size:4.0vw;
+    text-align: center;
+    font-weight: bold;
+    }
+
+#topper 	{
+
+height: 225px;
+}
+
+*
+ Media specific settings XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ */
+
+
+@media(max-width: 2000px)	{
+	html {
+		font-size:16px;
+		font-size:2.4vw;
+		}
+		.unbehaved-element	{
+			font-size: 1.9em;
+			font-size:2vw;
+			}
+	body  {
+		font: 11pt/1.4em "Verdana", "Helvetica","Helvetica neue", "Arial", "sans-serif";
+		font: 1.65vw "Verdana", "Helvetica","Helvetica neue", "Arial", "sans-serif";
+		}
+	h1 {
+		font-family: 'Dancing+Script'; 
+		font-weight: bold;
+		line-height: 20px;
+		line-height: 3.3vw;
+		font-size: 19px; 
+        font-size: 3.0vw;   
+		padding: 10px;
+		padding: 1.95vw;
+		}
+	}
+@media(max-width: 1024px)	{
+	html {
+		font-size:12px;
+		font-size:2.0vw;
+		}
+	body  {
+		font: 11pt/1.2em "Verdana", "Helvetica","Helvetica neue", "Arial", "sans-serif";
+		font: 1.65vw "Verdana","Helvetica","Helvetica neue", "Arial", "sans-serif";
+		}
+	h1 {
+		font-family: 'Dancing Script'; 
+		font-weight: bold;
+		line-height: 20px;
+		line-height: 3.3vw;
+		font-size: 18px; 
+        font-size: 3.0vw;  
+		padding: 8px;
+		padding:1.2vw;
+		}
+	@media(max-width: 480px)	{
+	html {
+		font-size:18px;
+		font-size:3.0vw;
+		}
+	body  {
+		font: 18pt/1.8em "Verdana", "Helvetica","Helvetica neue", "Arial", "sans-serif";
+		font: 1.8vw "Verdana","Helvetica","Helvetica neue", "Arial", "sans-serif";
+		}
+	h1 {
+		font-family: 'Dancing Script'; 
+		font-weight: bold;
+		line-height: 18px;
+		line-height: 3.1vw;
+		font-size: 16px; 
+        font-size: 2.9vw;  
+		padding: 8px;
+		padding:1.2vw;
+		}
+}	
+
+
+
+
+

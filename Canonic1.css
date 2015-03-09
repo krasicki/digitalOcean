@@ -1,0 +1,401 @@
+/* 
+	Selector Rules 
+*/
+
+html {
+	padding: 0px;
+	background: #eee9df url("../images/yelloww.jpg") center top repeat;
+ 	display: block;
+	font-size: 20px;
+	font-size:2.7vw;
+	font-family:"Verdana", "Helvetica","Helvetica neue", "Arial", "sans-serif";
+	text-align: left;
+	}
+	
+body {
+ 	margin-right: 50px;
+	margin-right: 7.5vw;
+	margin-left: 50px;
+    margin-left: 7.5vw;
+}
+
+h1 {
+    font-family: 'Dancing Script';
+    font-weight: 700;
+    line-height: 30px;
+    line-height: 4.5vw;
+    font-size: 28px; 
+	font-size:3.7vw;
+	padding: 15px;
+	padding: 2.25vw;
+    }
+	
+p {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+br
+{   content: "A" !important;
+    display: block !important;
+    margin-bottom: 1.5em !important;
+}
+
+header {
+	background: linear-gradient(to left,rgba(54,194,182,0.96) 0,rgba(62,188,207,0.96) 100%);
+	border-bottom: 0px solid rgba(0,0,0,.1);
+	box-shadow: 0 0px 0px 0 rgba(0,0,0,.1);
+	display: block;
+	height: 60px;
+	height: 4.0vw;
+	line-height: 59px;
+	line-height:  4.0vw;
+	overflow: hidden;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 1000;
+}
+
+
+/* START NAV MENU */
+nav {
+   background:#2C5463 url("../images/yelloww.jpg") center top repeat;
+  height:60px;
+  height: 4.0vw;
+}
+
+nav ul {
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  font-size:2.0vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+ 
+}
+ 
+nav li ul { 
+  display: none; 
+}
+ 
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  /*padding: 7px 15px 3px 15px; */
+  background: #2C5463;
+  color: #ffffff;  
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  height:4.0vw;
+  width:120px;
+  width:14vw;
+  text-align:center;
+  
+}
+ 
+nav ul li a:hover { 
+  background: #617F8A; 
+}
+ 
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:59px;
+  height:4.0vw;
+}
+ 
+nav li:hover li {
+  float: none;
+  font-size: 11px;
+  font-size: 1.65vw;
+}
+ 
+nav li:hover a { 
+  background: #3A464F; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+  height:4.0vw;
+}
+ 
+nav li:hover li a:hover { 
+  background: #95A9B1; 
+}
+ 
+nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* END NAV MENU */
+
+/*
+.unbehaved-element	{
+	font-size: 2em;
+	font-size:2vw;
+	}
+
+
+/*HTML 5 specific*/
+/* header,section,article,aside,footer{
+}
+
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+	}
+p {
+    margin: 0 0 23px 0;
+    }
+*/
+
+/* 
+	Classes #############################################################################
+*/
+/*
+.inner {
+    display: inline-block;
+    position: relative;
+}
+
+.overflow {
+*/
+/*    float: right; */
+/* } */
+
+
+/*
+.tbl {
+	display:table;
+	border: 0;
+}
+
+.tblrow {
+	display: table-row;
+	width:100%;
+	}
+
+.tblcol {
+	display: table-cell;
+	width:  240px;
+	width: 36vw;
+	padding: 18px;
+    padding:2.7vw;
+	}
+	
+.tblCol p  {
+	font-size: 14pt;
+	font-size:2.1vw;
+	}
+*/
+	
+.keywords  {
+  font-family: Verdana;
+  font-weight: bold;
+  line-height: 16px;
+  line-height:2.4vw;
+  margin-top:1.25em;
+  font-size: 2.1vw;
+}
+
+
+.kwbody  {
+  font-family: Verdana;
+  line-height: 18px;
+  line-height:2.7vw;
+  margin-top: 1.25em;
+  font-size: 2.4vw;
+}
+
+.topics  {
+  font-family: Verdana;
+  font-weight: bold;
+  line-height: 20px;
+  line-height:3.0vw;
+  margin-top: 1.25em;
+  font-size: 2.7vw;
+}
+
+
+
+/*
+
+.block { width:1024px;}
+.element1, .element2, .element3 { width:300px; margin:0; background-color: #efefef }
+.element1 { float:left; }
+.element2 { float:left; }
+.element3 { float:right; }
+.clear { clear: left; }
+
+.page { }
+
+.summary { }
+
+.sidebar {  }
+
+.footer { }
+
+.legal { }
+
+*/
+
+/* 
+	Identifiers #####################################################################################################
+*/
+
+#container	{
+      /* Set these dimensions so the card can be properly displayed in Safari on iPhone */
+/*    width: 700px; 
+    height: 500px;  */
+/*		background-color: rgba(56,108,179, 0.5); */
+/*	  background: #eee9df url(../images/paper1.jpg) center top repeat; */
+        /* Disable tap highlighting */
+ /*   -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;  
+    -o-perspective: 1000; */
+/*    perspective: 1000;   */
+    }   
+
+
+#container10	{
+    font-family: 'Dancing Script';
+    font-weight: 900;
+    line-height: 30px;
+	line-height:6.5vh;
+    font-size: 22px;
+	font-size:3.3vw;
+    text-align: center;
+    }
+
+
+
+
+
+#parentbox	{
+ 	justify-content:center; 
+	display: -webkit-flex;   
+	display: flex;* 
+	flex-direction:row;
+	flex-wrap:wrap; 
+	padding: 15px;
+	padding-right:2.25vw;
+}
+
+#box1	{
+	flex:1 1 auto;	
+	padding-left: 10px;
+	padding-left: 1.5vw;
+	padding-right: 10px;
+	padding-right:1.5vw;
+}
+#box2	{
+	flex:1 5 auto;
+	padding-left: 10px;
+	padding-left: 1.5vw;
+	padding-right: 10px;
+	padding-right:1.5vw;
+}
+#box3	{
+	flex:1 5 auto;
+	padding-left: 10px;
+	padding-left: 1.5vw;
+	padding-right: 10px;
+	padding-right:1.5vw;
+}
+#box4	{
+	flex:1 1 auto;	
+	padding-left: 10px;
+	padding-left: 1.5vw;
+	padding-right: 10px;
+	padding-right:1.5vw;
+}
+#box5	{
+	flex:1 auto;	
+	padding-left: 10px;
+	padding-left: 1.5vw;
+	padding-right: 10px;
+	padding-right:1.5vw;
+}
+#box6	{
+	flex:1 1 auto;	
+	padding-left: 10px;
+	padding-left: 1.5vw;
+
+	padding-right: 10px;
+	padding-right:1.5vw;
+}  
+
+/*
+input[type=search] { 
+	color: black;  
+	text-align: left;
+	cursor: pointer;
+	display: block; 
+	width: 20%; 
+	letter-spacing: 4px; 
+	letter-spacing: .45vw
+ 	text-shadow: 0 0 2px black;       
+	text-shadow: 0 0 .3vw black;       
+	word-spacing: 20px;
+	word-spacing:3.0vw
+               
+}
+
+*/
+
+/*
+ Media specific settings XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ */
+
+
+@media(max-width: 1580px)	{
+	html {
+		font-size:16px;
+		font-size:2.4vw;
+		}
+		.unbehaved-element	{
+			font-size: 1.9em;
+			font-size:2vw;
+			}
+	body  {
+		font: 11pt/1.4em "Verdana, Helvetica","Helvetica neue", "Arial", "sans-serif";
+		font: 1.65vw "Verdana, Helvetica","Helvetica neue", "Arial", "sans-serif";
+		}
+	h1 {
+		font-family: 'Dancing Script'; 
+		font-weight: bold;
+		line-height: 24px;
+		line-height: 3.3vw;
+		font-size: 22px; 
+        font-size: 3.0vw;   
+		padding: 13px;
+		padding: 1.95vw;
+		}
+	}
+@media(max-width: 980px)	{
+	html {
+		font-size:12px;
+		font-size:1.8vw;
+		}
+	body  {
+		font: 11pt/1.2em "Verdana, Helvetica","Helvetica neue", "Arial", "sans-serif";
+		font: 1.65vw "Verdana, Helvetica","Helvetica neue", "Arial", "sans-serif";
+		}
+	h1 {
+		font-family: 'Dancing Script'; 
+		font-weight: bold;
+		line-height: 24px;
+		line-height: 3.3vw;
+		font-size: 22px; 
+        font-size: 3.0vw;  
+		padding: 8px;
+		padding:1.2vw;
+		}
+	}	

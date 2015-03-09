@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<HTML ng-app>
+<HEAD>
+	<meta charset="UTF-8">
+	<meta name="Description" CONTENT="Site Owner: Frank Krasicki,  Publisher: Frank Krasicki Category: Digital Publishing, Contents: Recruiter, Experimental Content">
+	<TITLE>The Improbable Return of the Silicon Daze</TITLE>
+	<link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|Contrail+One" rel="stylesheet" type="text/css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./../static/css/CanonicSD14.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	 <!--<h1>Testing</h1> -->
+	 <!--
+	<p>A test responsive toolbar</p>
+	<nav>
+		<ul>
+			<li><a href="javascript:void(0)">HyperFiction</a></li>
+			<li><a href="javascript:void(0)">AutomaticPoetry</a></li>
+			<li><a href="javascript:void(0)">Art</a></li>
+			<li><a href="javascript:void(0)">Photography</a></li>
+			<li><a href="javascript:void(0)">About</a></li>
+			<li><a href="javascript:void(0)">Contact</a></li>
+		</ul>
+	</nav> -->
+</HEAD>
+<BODY >
+	<div class="page">
+ <!-- Start of Page -->
+<!--	<section  id="topper";>
+			<img src="http://207.251.86.238/cctv20.jpg?math=0.49308599438518286" alt="Live Cam NYStreetScene" name="NYStreetScene" width="352" height="240" border="0" align="left" id="NYStreetScene">
+			<img src="http://207.251.86.238/cctv14.jpg?math=0.11805924540385604" alt="Brooklyn Bridge Live Cam" name="BrooklynBridge" width="352" height="240" border="0" align="middle" id="BrooklynBridge"></p>
+	</section> -->
+		<div id="container10"><p/>
+			<p>Welcome to the </p>
+			<P>Recruiting FAQ Page<p>
+		</div>
+		<hr><p>&nbsp;</p><div>
+		
+			
+			<p>&nbsp;</p>
+		</div> 
+		<hr><p>&nbsp;</p><div ng-app>
+
+			<P><H1>I am looking for a Technical Architect position either Permanent or Contract such as: Enterprise, Solutions, Information, or Software Architect.<p>An Architect position is generally speaking a forty percent or less programming arrangement.</p></H1></P>
+			<P><H1>I am looking for contract Development position (40% or more code development) either working with Java or in Dev-Ops</p></H1></P>
+			<P><H1>I do HANDS-ON development.        Both hands!</p></H1></P>
+			<P><H1>Where did you do HANDS-ON development?        RTFR</p></H1></P>
+			<P><H1>I am a US Citizen.</H1></P>
+			<P><H1>I will not relocate from Connecticut.</H1></P>
+			<P><H1>I do contract work in much of CT, MA, RI, NH, and New York City.</H1></P>
+			<P><H1>No, the commute does not bother me.</H1></P>
+			<P><H1>Expenses for overnight or "professional day" contracts are not included in any quoted rates.</H1></P>
+			
+			
+			<P><H1>I notice a lot of three and six month contracts on your resume. Is there a reason why?</H1></P>
+			
+						How long is the contract you are offering me?&nbsp;
+<input type="text" ng-model="someterm">&nbsp;months.
+ 
+<h1 ng-show="someterm">Every  {{ someterm }} month contract lasts approximately  {{ someterm }}  months.  My resume reflects a business development cycles that I (and you) usually have no control over.  If the opportunity to stay on a project longer is available, I would stay longer.</h1>
+<p></p>
+			<P><H1>Length of Experience</H1></P><p></p>
+			How long have you used [type a computer language from the resume]: &nbsp;
+<input type="text" ng-model="sometext">&nbsp;?
+ 
+<h1 ng-show="sometext">I 've used  {{ sometext }} since at least 1995.</h1>
+		</div>
+
+	<hr>
+	
+				<P><H1>The Following is Under Construction;</H1></P>
+
+<div ng-controller="LangController" >
+     Language:<input type="text" ng-model="newlang" placeholder="language">
+    <button ng-click="add()">Add</button>
+    <h1>Languages</h1>
+ 
+    <ul>
+        <li ng-repeat="lang in langs"> {{ lang }} </li>
+    </ul>
+ 
+</div>
+<footer role="legal">
+	<P class="legal"><small>&copy; 2015 Krasicki</small>
+	</P>
+ </footer>
+    </div> <!-- end container -->
+This page uses both HTML5 and Angular components.
+	</DIV> <!-- end page -->
+
+
+
+
+<script type="text/javascript">
+function LangController($scope) {
+    $scope.langs = ["Java", "Javascript"];
+    
+    $scope.add = function() {
+        $scope.langs.push($scope.newlang);
+		$scope.newlang = "";
+    }}
+	</script>
+<!--	
+function ContactController($scope) {
+    $scope.contacts = ["viralpatel.net@gmail.com", "hello@email.com"];
+    
+    $scope.add = function() {
+        $scope.contacts.push($scope.newcontact);
+		$scope.newcontact = "";
+    }}  -->
+	
+	</BODY>
+</HTML>
+
+
+    <ul>
+        <!-- ngRepeat: contact in contacts --><li ng-repeat="contact in contacts" class="ng-scope ng-binding"> hi@email.com </li><li ng-repeat="contact in contacts" class="ng-scope ng-binding"> hello@email.com </li>
+    </ul>
+ 
+</div>
+<script type="text/javascript">function ContactController($scope){$scope.contacts=["hi@email.com","hello@email.com"];$scope.add=function(){$scope.contacts.push($scope.newcontact);$scope.newcontact="";}}</script>
+
+ 
